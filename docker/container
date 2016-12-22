@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Generating a container for the project..."
+echo "========================================="
+echo "Container's name: "
+read cname
+echo "Volume path (default to pwd)"
+read path
+
+if [ -z "$path" ]
+  then
+    path=$(pwd)
+fi
+
+docker run -it --name "$cname" --net host -v "$path":/home/dev/app automata-reactjs

@@ -1,0 +1,24 @@
+{
+  "name": "reactautomata",
+  "version": "1.0.0",
+  "description": "An automata in react",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Bustos <alejandro@boolean.cl>",
+  "license": "MIT",
+  "keywords": [
+    "ReactJS",
+    "Javascript",
+    "Cellular",
+    "Automata"
+  ],
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

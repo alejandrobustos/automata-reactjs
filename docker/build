@@ -1,3 +1,10 @@
 #!/bin/bash
+echo "Mapping the actual user to will be copied over to the Docker Image"
+echo "============================================================"
+echo "HOST USERNAME: $USER   --->  CONTAINER USERNAME: dev        "
+echo "HOST USER ID: $UID     --->  CONTAINER USER ID: $UID        "
+echo "============================================================"
+echo $UID >> docker/.userid
 echo "Building image, this could take some time..."
-docker build -t automata-reactjs docker/. > /dev/null 2>&1
+docker build -t automata-reactjs docker/ > /dev/null 2>&1
+rm docker/.userid

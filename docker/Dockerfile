@@ -1,6 +1,7 @@
 FROM node:6-slim
 
-RUN useradd -ms /bin/bash dev
+COPY ./.userid /.hostuserid
+RUN useradd -u $(cat /.hostuserid) -ms /bin/bash dev
 RUN chown -R dev:dev /home/dev
 USER dev
 ENV HOME /home/dev

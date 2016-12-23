@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Mapping the actual user to will be copied over to the Docker Image"
+echo "Mapping the actual user that will be copied to the Docker Image"
 echo "============================================================"
 echo "HOST USERNAME: $USER   --->  CONTAINER USERNAME: dev        "
 echo "HOST USER ID: $UID     --->  CONTAINER USER ID: $UID        "
